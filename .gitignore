@@ -1,2 +1,2 @@
 build
-com/krzem/pi_calculation_bbp/*.txt
+src/**/*.txt
