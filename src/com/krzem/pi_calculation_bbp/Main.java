@@ -296,9 +296,10 @@ public class Main{
 		this._file=true;
 		Main cls=this;
 		new Thread(new Runnable(){
+			@Override
 			public void run(){
 				try{
-					BufferedWriter w=new BufferedWriter(new FileWriter("com/krzem/pi_calculation_bbp/dump.txt"));
+					BufferedWriter w=new BufferedWriter(new FileWriter("dump.txt"));
 					w.write(String.format("%s\n\n\n%s",i,pi));
 					w.close();
 					cls._file=false;
